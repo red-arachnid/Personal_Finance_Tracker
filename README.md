@@ -61,5 +61,6 @@ Building this project provided hands-on experience with several core software en
 6. **Logout:** Securely exit to the main screen.
 
 ## Preview
-[![Preview Video]](https://github.com/red-arachnid/Personal_Finance_Tracker/blob/eb7c50ff771ec5024d047d59509d21e460f073d3/Preview.mp4)
+
+https://github.com/red-arachnid/Personal_Finance_Tracker/blob/14d8c36456b53c4810a94c23530e1aa15812f56a/Preview.mp4
 
