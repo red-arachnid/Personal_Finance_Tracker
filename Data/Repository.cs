@@ -30,7 +30,7 @@ namespace Personal_Finance_Tracker.Data
             }
             catch 
             {
-                return null!;
+                return new PFTData();
             }
         }
     }
