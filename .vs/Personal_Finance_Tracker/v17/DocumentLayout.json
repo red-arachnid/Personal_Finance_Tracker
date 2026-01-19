@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|solutionrelative:ui\\mainui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\services\\financeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|solutionrelative:services\\financeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E38D37F-84A1-4342-9310-30232FF53B9A}|Personal_Finance_Tracker.csproj|c:\\_myfiles\\programming\\c#\\personal_finance_tracker\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,15 +46,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwDgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-01-19T12:25:12.001Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Data\\Repository.cs",
               "RelativeDocumentMoniker": "Data\\Repository.cs",
@@ -63,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -76,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "Models\\Transaction.cs",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PFTData.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Models\\PFTData.cs",
               "RelativeDocumentMoniker": "Models\\PFTData.cs",
@@ -102,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Services\\UserService.cs",
@@ -121,27 +138,27 @@
               "RelativeDocumentMoniker": "Services\\FinanceService.cs",
               "ToolTip": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Services\\FinanceService.cs",
               "RelativeToolTip": "Services\\FinanceService.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAxwCkAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T14:32:59.776Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainUI.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\UI\\MainUI.cs",
               "RelativeDocumentMoniker": "UI\\MainUI.cs",
               "ToolTip": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\UI\\MainUI.cs",
               "RelativeToolTip": "UI\\MainUI.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAIwH0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAywLQAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T14:32:57.903Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",

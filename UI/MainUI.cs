@@ -179,7 +179,7 @@ namespace Personal_Finance_Tracker.UI
 
             string[] categories = (type == TransactionType.Income)
                 ? new[] { "Salary", "Freelance", "Gift", "Other" }
-                : new[] { "Food", "Rent", "Utilities", "Entertainment", "Other" };
+                : new[] { "Groceries", "Rent", "Entertainment", "Other" };
 
             string category = AnsiConsole.Prompt(
                 new SelectionPrompt<string>()
