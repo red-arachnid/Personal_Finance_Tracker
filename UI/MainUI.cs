@@ -75,18 +75,42 @@ namespace Personal_Finance_Tracker.UI
 
         private void Register()
         {
-            string username = AnsiConsole.Ask<string>("Enter a [green]Username[/] : ");
-            string password = AnsiConsole.Prompt(
+            string username, password, confirmPassword;
+
+            username = AnsiConsole.Ask<string>("Enter a [green]Username[/] : ");
+            if (_userService.CheckDuplicateUser(username))
+            {
+                AnsiConsole.MarkupLine("[red]Username already exists. Try another.[/]");
+                return;
+            }
+
+            password = AnsiConsole.Prompt(
                 new TextPrompt<string>("Enter a [green]Password[/] : ")
                 .PromptStyle("red")
                 .Secret());
+            confirmPassword = AnsiConsole.Prompt(
+                new TextPrompt<string>("Confirm your [green]Password[/] : ")
+                .PromptStyle("red")
+                .Secret());
+
+            if (String.Compare(password, confirmPassword, false) != 0)
+            {
+                AnsiConsole.MarkupLine("[red]The password does not match![/]");
+                return;
+            }
+
+            
+            if (!AnsiConsole.Confirm("Are you sure you want to create this account?"))
+            {
+                AnsiConsole.MarkupLine("[red]Aborting account registration![/]");
+                return;
+            }
 
             bool isSuccess = _userService.AddUser(username, password);
-
             if (isSuccess)
                 AnsiConsole.MarkupLine("[green]Account created successfully! Please Login.[/]");
             else
-                AnsiConsole.MarkupLine("[red]Username already exists. Try another.[/]");
+                AnsiConsole.MarkupLine("[red]Error in account registration. Please try again..[/]");
         }
 
         private void ShowMainMenu()

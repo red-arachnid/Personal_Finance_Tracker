@@ -19,7 +19,7 @@ namespace Personal_Finance_Tracker.Services
         public User Login(string username, string password)
         {
             //Find User through username
-            var user = _data.Users.SingleOrDefault(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase));
+            var user = _data.Users.SingleOrDefault(u => u.Username.Equals(username, StringComparison.Ordinal));
 
             if (user == null)
                 return null!;
@@ -36,7 +36,7 @@ namespace Personal_Finance_Tracker.Services
         public bool AddUser(string username, string password)
         {
             //Check if the given username exist or not
-            if (_data.Users.Any(u => u.Username.Equals(username, StringComparison.OrdinalIgnoreCase)))
+            if (CheckDuplicateUser(username))
                 return false;
 
             string hasedPassword = BCrypt.Net.BCrypt.HashPassword(password);
@@ -45,6 +45,16 @@ namespace Personal_Finance_Tracker.Services
             _data.Users.Add(newUser);
             _repository.SaveData(_data);
             return true;
+        }
+
+        /// <summary>Checks If a user already exist with the username</summary>
+        /// <returns>Returns true if it exists</returns>
+        public bool CheckDuplicateUser(string username)
+        {
+            if (_data.Users.Any(u => u.Username.Equals(username, StringComparison.Ordinal)))
+                return true;
+            
+            return false;
         }
     }
 }

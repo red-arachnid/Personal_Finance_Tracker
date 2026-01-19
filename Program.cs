@@ -4,7 +4,6 @@ namespace Personal_Finance_Tracker
 {
     public class Program
     {
-
         private static void Main()
         {
             MainUI ui = new MainUI();
