@@ -17,8 +17,8 @@ A console-based Personal Finance Tracker application built with .NET 9. This app
 - **Language:** C#
 - **Frameword:** .NET 9.0
 - **Libraries:**
-	- **[Spectre.Console] {https://spectreconsole.net/}:** For rendering tables, charts, and interactive prompts.
-	- **[BCrypt.Net-Next] {https://github.com/BcryptNet/bcrypt.net}:** For secure password hashing and verification.
+	- **[Spectre.Console](https://spectreconsole.net/):** For rendering tables, charts, and interactive prompts.
+	- **[BCrypt.Net-Next](https://github.com/BcryptNet/bcrypt.net):** For secure password hashing and verification.
 	- **System.Text.Json:** For data serialization and storage.
 
 ## What I Learned From This
@@ -31,7 +31,7 @@ Building this project provided hands-on experience with several core software en
 ## How to Use It
 
 ### Prerequisites
-- [.NET 9.0 SDK] {https://dotnet.microsoft.com/en-us/download/dotnet/9.0} installed on your machine.
+- [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) installed on your machine.
 
 ### Installation & Run
 1. **Clone the repository** (or download the source code):
