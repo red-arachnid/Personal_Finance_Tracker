@@ -160,15 +160,22 @@ namespace Personal_Finance_Tracker.UI
 
         private void AddTransactionScreen()
         {
-            decimal amount = AnsiConsole.Prompt(
-                new TextPrompt<decimal>("Enter Amount : ")
-                .Validate(amount => (amount > 0) ? ValidationResult.Success() : ValidationResult.Error("[red]Amount must be positive[/]")));
+            decimal saving = _financeService.GetStats(_currentUser.Id).Saving;
+
+            AnsiConsole.MarkupLineInterpolated($"Your current savings are : {saving}");
 
             TransactionType type = AnsiConsole.Prompt(
                 new SelectionPrompt<TransactionType>()
                 .Title("What is the transaction type : ")
                 .UseConverter(type => type.ToString())
                 .AddChoices(TransactionType.Income, TransactionType.Expense));
+
+            decimal amount = AnsiConsole.Prompt(
+                new TextPrompt<decimal>("Enter Amount : ")
+                .Validate(amount => (amount > 0) ? ValidationResult.Success() : ValidationResult.Error("[red]Amount must be positive[/]"))
+                .Validate(amount => (type == TransactionType.Expense && amount > saving) 
+                    ? ValidationResult.Error("[red]You can't expend more than your savings[/]") 
+                    : ValidationResult.Success()));
 
             string[] categories = (type == TransactionType.Income)
                 ? new[] { "Salary", "Freelance", "Gift", "Other" }
@@ -178,6 +185,14 @@ namespace Personal_Finance_Tracker.UI
                 new SelectionPrompt<string>()
                 .Title("[bold]Select Category[/]")
                 .AddChoices(categories));
+
+            if (!AnsiConsole.Confirm("Are you sure you want to add this transaction?"))
+            {
+                AnsiConsole.MarkupLine("[red]Transaction Cancelled[/]");
+                AnsiConsole.MarkupLine("Press any key to continue");
+                Console.ReadKey();
+                return;
+            }
 
             _financeService.AddTransaction(_currentUser.Id, amount, category, type);
 
@@ -214,8 +229,7 @@ namespace Personal_Finance_Tracker.UI
 
         private void ShowStats()
         {
-            var (income, expense) = _financeService.GetStats(_currentUser.Id);
-            decimal savings = income - expense;
+            var (income, expense, savings) = _financeService.GetStats(_currentUser.Id);
 
             AnsiConsole.Write(new BarChart()
                 .Width(150)

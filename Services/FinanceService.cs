@@ -32,14 +32,14 @@ namespace Personal_Finance_Tracker.Services
             _repository.SaveData(_data);
         }
 
-        public (decimal TotalIncome, decimal TotalExpense) GetStats(Guid userId)
+        public (decimal TotalIncome, decimal TotalExpense, decimal Saving) GetStats(Guid userId)
         {
             List<Transaction> transactions = GetTransactionsByUser(userId);
 
             decimal income = transactions.Where(t => t.Type == TransactionType.Income).Sum(t => t.Amount);
             decimal expense = transactions.Where(t => t.Type == TransactionType.Expense).Sum(t => t.Amount);
-
-            return (income, expense);
+            decimal saving = income - expense;
+            return (income, expense, saving);
         }
 
         public void ClearTransactions(Guid userId)
