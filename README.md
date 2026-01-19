@@ -59,5 +59,7 @@ Building this project provided hands-on experience with several core software en
 5. **Show Statistics:** View a bar chart summary of your finances.
 
 6. **Logout:** Securely exit to the main screen.
-	
+
+## Preview
+[![Preview Video]](https://github.com/red-arachnid/Personal_Finance_Tracker/blob/eb7c50ff771ec5024d047d59509d21e460f073d3/Preview.mp4)
 
