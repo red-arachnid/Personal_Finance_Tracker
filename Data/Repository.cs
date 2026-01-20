@@ -8,7 +8,7 @@ namespace Personal_Finance_Tracker.Data
 {
     public class Repository
     {
-        private const string FILE_PATH = "data.json";
+        private static readonly string FILE_PATH = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data.json");
 
         public void SaveData(PFTData data)
         {
