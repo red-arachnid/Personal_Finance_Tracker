@@ -72,7 +72,7 @@
               "RelativeDocumentMoniker": "Data\\Repository.cs",
               "ToolTip": "C:\\_MyFiles\\Programming\\C#\\Personal_Finance_Tracker\\Data\\Repository.cs",
               "RelativeToolTip": "Data\\Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T14:33:04.161Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T14:33:02.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T14:33:02.871Z"
             },
             {
               "$type": "Document",
@@ -124,8 +123,7 @@
               "RelativeToolTip": "Services\\UserService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwC0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T14:33:00.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T14:33:00.43Z"
             },
             {
               "$type": "Document",
@@ -149,8 +147,7 @@
               "RelativeToolTip": "UI\\MainUI.cs",
               "ViewState": "AgIAAGAAAAAAAAAAAAAqwGwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T14:32:57.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T14:32:57.903Z"
             },
             {
               "$type": "Document",
@@ -162,8 +159,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T14:30:58.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T14:30:58.019Z"
             }
           ]
         }
