@@ -5,13 +5,13 @@ namespace Personal_Finance_Tracker.Services
 {
     public class FinanceService
     {
-        private readonly Repository _repository;
+        private Repository _repository;
         private PFTData _data;
 
-        public FinanceService()
+        public FinanceService(Repository repository, PFTData data)
         {
-            _repository = new Repository();
-            _data = _repository.LoadData();
+            _repository = repository;
+            _data = data;
         }
 
         public List<Transaction> GetTransactionsByUser(Guid userId)

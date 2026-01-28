@@ -1,4 +1,5 @@
-﻿using Personal_Finance_Tracker.Models;
+﻿using Personal_Finance_Tracker.Data;
+using Personal_Finance_Tracker.Models;
 using Personal_Finance_Tracker.Services;
 using Spectre.Console;
 using System.Text;
@@ -13,8 +14,10 @@ namespace Personal_Finance_Tracker.UI
 
         public MainUI()
         {
-            _userService = new UserService();
-            _financeService = new FinanceService();
+            Repository repository = new Repository();
+            PFTData data = repository.LoadData();
+            _userService = new UserService(repository, data);
+            _financeService = new FinanceService(repository, data);
         }
 
         public void Start()
